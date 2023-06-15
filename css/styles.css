@@ -259,7 +259,6 @@ cursor: pointer;
 }
 
 .hide {
-    visibility: hidden;
     line-height: 1.5;
 }
 
@@ -296,8 +295,4 @@ cursor: pointer;
 
 .h-line {
     line-height: 1.2;
-}
-
-.h-hl {
-    line-height: 1.5;
 }
