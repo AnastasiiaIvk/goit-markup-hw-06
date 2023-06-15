@@ -36,9 +36,8 @@ h3 {
 }
 
 /* Reset */
-.list,
-.ul,
-.ol {list-style: none;
+ul,
+ol {list-style-type: none;
     font-style: normal;
 }
 
@@ -48,13 +47,8 @@ a {
     color: currentColor;
     font-style: normal;
 }
-
-.button {
-    font-family: inherit;
-    cursor: pointer;
-}
-
-/* Header */
+    
+    /* Header */
 
 .header {
     background-color: #FFFFFF;
@@ -104,6 +98,11 @@ a {
     letter-spacing: 0.02em;
 }
 
+.address-link:hover,
+.address-link:focus {
+    color: #404BBF;
+}
+
 /* Main */
 /* Hero */
 .section-hero {
@@ -120,6 +119,8 @@ a {
 }
 
 .button {
+    font-family: inherit;
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -132,4 +133,66 @@ a {
 .button:focus {
     background-color: #404BBF;
     color: #FFFFFF;
+}
+
+.section-quality {
+
+}
+
+.section-production {
+
+}
+
+.production-item {
+
+}
+
+.production-list {
+
+}
+
+.production {
+
+}
+
+.section-team {
+
+}
+
+.team-list {
+
+}
+
+.team-item {
+
+}
+
+.team {
+
+}
+
+.navigation {
+
+}
+
+.nav-list {
+    text-align: center;
+}
+
+.nav-item {
+
+}
+
+.nav-button {
+background-color: rgba(64, 75, 191, 1);
+color: rgba(255, 255, 255, 1);
+}
+
+.nav-btn {
+background-color: rgba(231, 233, 252, 1);
+color: rgba(77, 90, 229, 1)
+}
+
+.all {
+
 }
