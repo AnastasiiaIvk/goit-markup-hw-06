@@ -12,7 +12,6 @@ body {
 p .text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
     letter-spacing: 0.02em;}
 
 h2 {
@@ -206,7 +205,7 @@ a {
 }
 
 .team {
-background-color: #FFFFFF;;
+background-color: #FFFFFF;
 }
 
 .navigation {
@@ -252,9 +251,17 @@ color: rgba(77, 90, 229, 1)
 .p-name {
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--leader-color);
+    color: var(--headline-and-back);
+    line-height: 1.2;
+
 }
 
 .address-list {
     list-style: none;
+}
+
+.text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--leader-color);
 }
