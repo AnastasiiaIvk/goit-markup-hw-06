@@ -19,7 +19,6 @@ p .text {
 h2 {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--headline-and-back);
@@ -253,6 +252,7 @@ cursor: pointer;
 
 .hide {
     visibility: hidden;
+    line-height: 1.5;
 }
 
 .p-name {
@@ -276,7 +276,7 @@ cursor: pointer;
 .h-portfolio-name {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);    
 }
@@ -284,4 +284,8 @@ cursor: pointer;
 .portfolio-text {
     letter-spacing: 0.02em;
     color: var(--leader-color);
+}
+
+.h-line {
+    line-height: 1.2;
 }
