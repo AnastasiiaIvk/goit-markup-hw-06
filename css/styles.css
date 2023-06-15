@@ -39,6 +39,8 @@ h3 {
 
 .footer-text {
     color: #F4F4FD;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 /* Reset */
@@ -164,6 +166,7 @@ a {
 
 .wawd {
     text-transform: capitalize;
+    letter-spacing: 0.02em;
 }
 
 .section-production {
@@ -192,8 +195,10 @@ a {
 
 .team {
     background-color: #FFFFFF;
-}.list {
+}
 
+.list {
+    list-style: none;
 }
 
 .team-item {
@@ -201,7 +206,7 @@ a {
 }
 
 .team {
-
+background-color: #FFFFFF;;
 }
 
 .navigation {
@@ -242,4 +247,14 @@ color: rgba(77, 90, 229, 1)
 
 .hide {
     visibility: hidden;
+}
+
+.p-name {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--leader-color);
+}
+
+.address-list {
+    list-style: none;
 }
