@@ -228,7 +228,14 @@ font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: var(--button);
-background-color: var();
+background-color: var(--back-btn);
+cursor: pointer;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
 }
 
 .address {
@@ -269,7 +276,12 @@ background-color: var();
 .h-portfolio-name {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--headline-and-back);
+    color: var(--headline-and-back);    
+}
+
+.portfolio-text {
+    letter-spacing: 0.02em;
+    color: var(--leader-color);
 }
