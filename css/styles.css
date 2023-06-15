@@ -7,7 +7,9 @@ body {
 
 :root {
     --headline-and-back: #2E2F42;
-    --leader-color: #434455;}
+    --leader-color: #434455;
+    --button: #4d5ae5;
+    --back-btn: #F4F4FD;}
 
 p .text {
     font-weight: 400;
@@ -221,14 +223,12 @@ background-color: #FFFFFF;
 
 }
 
-.nav-button {
-background-color: rgba(64, 75, 191, 1);
-color: rgba(255, 255, 255, 1);
-}
-
 .nav-btn {
-background-color: rgba(231, 233, 252, 1);
-color: rgba(77, 90, 229, 1)
+font-weight: 500;
+line-height: 1.5;
+letter-spacing: 0.04em;
+color: var(--button);
+background-color: var();
 }
 
 .address {
@@ -264,4 +264,12 @@ color: rgba(77, 90, 229, 1)
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--leader-color);
+}
+
+.h-portfolio-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--headline-and-back);
 }
