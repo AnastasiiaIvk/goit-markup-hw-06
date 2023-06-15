@@ -169,6 +169,10 @@ a {
     letter-spacing: 0.02em;
 }
 
+.wawd-line {
+    line-height: 1.11;
+}
+
 .section-production {
 
 }
@@ -191,6 +195,10 @@ a {
 
 .ourteam {
     text-transform: capitalize;
+}
+
+.ourteam-line {
+    line-height: 1.11;
 }
 
 .team {
