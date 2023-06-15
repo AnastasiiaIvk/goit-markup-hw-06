@@ -260,6 +260,7 @@ cursor: pointer;
 
 .hide {
     line-height: 1.5;
+    visibility: hidden;
 }
 
 .p-name {
