@@ -292,6 +292,7 @@ cursor: pointer;
 .portfolio-text {
     letter-spacing: 0.02em;
     color: var(--leader-color);
+    line-height: 1.5;
 }
 
 .h-line {
