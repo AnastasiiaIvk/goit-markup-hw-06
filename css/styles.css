@@ -31,7 +31,13 @@ body {
     letter-spacing: 0.02em;
 }
 
+/* Other*/
+
+
+
 /* Reset */
+
+
 .list {
     list-style: none;
     font-style: normal;
@@ -102,6 +108,7 @@ body {
 .section-hero {
     background-color: var(--headline-and-back);
     text-align: center;
+    height: 600px;
 }
 
 .headline {
