@@ -122,7 +122,9 @@ img {
     padding: 24px 0;
 }
 
-
+.header-logo {
+    padding: 24px 0;
+}
 
 .studio {
     font-weight: 800;
@@ -133,12 +135,15 @@ img {
     color: #F4F4FD;
 }
 
+
+
 .header-list-item {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
+    padding: 24px 0;
 }
 
 .header-list-link {
@@ -155,7 +160,6 @@ img {
     gap: 40px;
     border-bottom: 1px;
     border-bottom-color: var(--border);
-    padding: 24px 0;
 }
 
 .address-link {
