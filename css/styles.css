@@ -43,7 +43,7 @@ body {
 }
 
 .footer-link {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
@@ -139,6 +139,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
+    padding: 24px 0;
 }
 
 .header-list-link {
@@ -177,7 +178,7 @@ img {
     background-color: var(--headline-and-back);
     text-align: center;
     height: 600px;
-    padding: 120px 0;
+    padding: 188px 0;
 
 }
 
@@ -225,6 +226,10 @@ img {
     color: #FFFFFF;
 }
 
+.section-quality {
+    padding: 120px 0;
+}
+
 .quality-item {
     width: 264px;
 
@@ -234,8 +239,6 @@ img {
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding-top: 120px;
-    padding-bottom: 60px;
 }
 
 .h-mainpage-line {
@@ -368,6 +371,7 @@ img {
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
     line-height: 1.2;
+    margin-bottom: 8px;
 }
 
 .p-name-team {
@@ -398,9 +402,6 @@ img {
     color: var(--headline-and-back);
     display: flex;
     margin-bottom: 8px;
-
-
-
 }
 
 .portfolio-text {
