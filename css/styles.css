@@ -9,7 +9,9 @@ body {
     --headline-and-back: #2E2F42;
     --leader-color: #434455;
     --button: #4d5ae5;
-    --back-btn: #F4F4FD;}
+    --back-btn: #F4F4FD;
+    --border: #E7E9FC;
+}
 
 .h-mainpage-text {
     font-weight: 700;
@@ -23,34 +25,70 @@ body {
 
 .footer {
     background-color: var(--headline-and-back);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .footer-text {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    display: flex;
+    flex-direction: column;
+    width: 264px;
+    margin-top: 16px;
 }
 
-/* Other*/
-
-
+.container {
+    width: 1158px;
+    margin: 0 auto;
+    padding: 15px;
+}
 
 /* Reset */
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
 
 .list {
     list-style: none;
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 
 .link {
     text-decoration: none;
 }
-    
-    /* Header */
+
+/* Header */
 
 .header {
+    padding: 24px 156px;
+    border-bottom: 1px;
+    border-bottom-color: var(--border);
+}
 
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo {
@@ -62,6 +100,8 @@ body {
     text-transform: uppercase;
     color: var(--button);
 }
+
+
 
 .studio {
     font-weight: 800;
@@ -87,6 +127,14 @@ body {
 .header-list-link:hover,
 .header-list-link:focus {
     color: #404BBF;
+}
+
+.navigation {
+    display: flex;
+    gap: 40px;
+    padding-left: 76px;
+    border-bottom: 1px;
+    border-bottom-color: var(--border);
 }
 
 .address-link {
@@ -116,7 +164,15 @@ body {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    color: #FFFFFF;    
+    padding-top: 188px;
+    padding-bottom: 48px;
+    color: #FFFFFF;
+    display: flex;
+    width: 496px;
+    flex-direction: column;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .button {
@@ -126,7 +182,10 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color:#FFFFFF;
+    padding: 16px 32px;
+    margin-bottom: 188px;
+    border-radius: 4px;
+    color: #FFFFFF;
     background-color: #4D5AE5;
 }
 
@@ -136,38 +195,76 @@ body {
     color: #FFFFFF;
 }
 
-.section-quality {
+.quality-item {
+    width: 264px;
 
+}
+
+.quality-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 120px;
+    padding-bottom: 60px;
 }
 
 .h-mainpage-line {
     line-height: 1.11;
+    margin-bottom: 72px;
 }
 
 .section-production {
-
+    padding-top: 60px;
+    padding-bottom: 120px;
 }
 
-.production-item {
-
+.production-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
+
+.production {
+    border: 1px solid var(--border);
+}
+
+.production-item {}
 
 
 .section-team {
     background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team {
+    border: 1px solid var(--border);
+    margin-bottom: 32px;
+}
 
+.team-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .team-item {
     background-color: #FFFFFF;
+    display: inline-flex;
+    padding: 0px 0px 32px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .nav-list {
     text-align: center;
-
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
 }
 
 .item {
@@ -175,12 +272,12 @@ body {
 }
 
 .nav-btn {
-font-weight: 500;
-line-height: 1.5;
-letter-spacing: 0.04em;
-color: var(--button);
-background-color: var(--back-btn);
-cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--button);
+    background-color: var(--back-btn);
+    cursor: pointer;
 }
 
 .nav-btn:hover,
@@ -191,16 +288,22 @@ cursor: pointer;
 
 .address {
     font-style: normal;
+    margin-left: 332px;
 }
 
-.all {
-
+.address-list {
+    display: flex;
+    gap: 40px;
 }
+
+.all {}
 
 .hide {
     line-height: 1.5;
     visibility: hidden;
 }
+
+.p-text {}
 
 .p-name {
     font-weight: 500;
@@ -225,7 +328,7 @@ cursor: pointer;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: var(--headline-and-back);    
+    color: var(--headline-and-back);
 }
 
 .portfolio-text {
@@ -237,4 +340,3 @@ cursor: pointer;
 .h-line {
     line-height: 1.2;
 }
-
