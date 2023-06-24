@@ -13,6 +13,19 @@ body {
     --border: #E7E9FC;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;   
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .h-mainpage-text {
     font-weight: 700;
     font-size: 36px;
@@ -29,8 +42,8 @@ body {
     padding-bottom: 100px;
 }
 
-.footer-logo {
-    display: inline-block;
+.footer-link {
+    display: block;
     margin-bottom: 16px;
 }
 
@@ -89,17 +102,12 @@ img {
     display: flex;
     margin: 0 auto;
     border-bottom: 1px solid var(--border);
-    padding: 24px 0;
 }
 
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.header-logo {
-    margin-right: 76px;
 }
 
 .logo {
@@ -110,6 +118,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button);
+    margin-right: 76px;
+    padding: 24px 0;
 }
 
 
@@ -167,7 +177,7 @@ img {
     background-color: var(--headline-and-back);
     text-align: center;
     height: 600px;
-    padding: 188px 0;
+    padding: 120px 0;
 
 }
 
@@ -187,6 +197,7 @@ img {
     align-self: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 8px;
 }
 
 .button {
@@ -347,12 +358,6 @@ img {
     align-self: stretch;
 }
 
-.visually-hidden {
-    line-height: 1.5;
-    visibility: hidden;
-    margin-bottom: 8px;
-}
-
 .p-text {
     text-align: center;
 }
@@ -392,7 +397,10 @@ img {
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
     display: flex;
-    gap: 8px;
+    margin-bottom: 8px;
+
+
+
 }
 
 .portfolio-text {
