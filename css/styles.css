@@ -139,7 +139,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
-    padding: 24px 0;
 }
 
 .header-list-link {
@@ -156,6 +155,7 @@ img {
     gap: 40px;
     border-bottom: 1px;
     border-bottom-color: var(--border);
+    padding: 24px 0;
 }
 
 .address-link {
