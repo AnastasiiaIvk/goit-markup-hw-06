@@ -119,13 +119,15 @@ img {
     text-transform: uppercase;
     color: var(--button);
     margin-right: 76px;
-}
-
-.header-nav {
     padding: 24px 0;
 }
 
+.header-nav {
+
+}
+
 .header-logo {
+    padding: 24px 0;
 }
 
 .studio {
@@ -149,6 +151,7 @@ img {
 
 .header-list-link {
     color: var(--headline-and-back);
+    padding: 24px 0;
 }
 
 .header-list-link:hover,
@@ -161,6 +164,7 @@ img {
     gap: 40px;
     border-bottom: 1px;
     border-bottom-color: var(--border);
+    padding: 24px 0;
 }
 
 .address-link {
