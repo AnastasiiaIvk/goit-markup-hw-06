@@ -119,11 +119,13 @@ img {
     text-transform: uppercase;
     color: var(--button);
     margin-right: 76px;
+}
+
+.header-nav {
     padding: 24px 0;
 }
 
 .header-logo {
-    padding: 24px 0;
 }
 
 .studio {
@@ -143,7 +145,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
-    padding: 24px 0;
 }
 
 .header-list-link {
