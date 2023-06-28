@@ -51,8 +51,6 @@ body {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    display: flex;
-    flex-direction: column;
     width: 264px;
 }
 
@@ -99,15 +97,12 @@ img {
 /* Header */
 
 .header {
-    display: flex;
-    margin: 0 auto;
     border-bottom: 1px solid var(--border);
 }
 
 .header-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -118,8 +113,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--button);
-    margin-right: 76px;
-    padding: 24px 0;
+    
 }
 
 .header-nav {
@@ -128,6 +122,7 @@ img {
 
 .header-logo {
     padding: 24px 0;
+    margin-right: 76px;
 }
 
 .studio {
@@ -164,7 +159,6 @@ img {
     gap: 40px;
     border-bottom: 1px;
     border-bottom-color: var(--border);
-    padding: 24px 0;
 }
 
 .address-link {
@@ -199,12 +193,8 @@ img {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
-    padding-bottom: 48px;
     color: #FFFFFF;
-    display: flex;
     max-width: 496px;
-    flex-direction: column;
-    align-self: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 8px;
@@ -218,14 +208,12 @@ img {
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 16px 32px;
-    margin-bottom: 188px;
     border-radius: 4px;
     color: #FFFFFF;
     background-color: #4D5AE5;
     display: block;
     margin: 0 auto;
     min-width: 169px;
-    height: 56px;
     border: none;
 }
 
@@ -295,11 +283,6 @@ img {
 
 .team-item {
     background-color: #FFFFFF;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
@@ -399,7 +382,6 @@ img {
 }
 
 .portfolio {
-    padding-top: 96px;
     padding-bottom: 120px;
 }
 
@@ -409,7 +391,6 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--headline-and-back);
-    display: flex;
     margin-bottom: 8px;
 }
 
