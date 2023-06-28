@@ -291,8 +291,7 @@ img {
     text-align: center;
     display: flex;
     justify-content: center;
-    gap: 24px;   
-    margin-top: 96px;
+    gap: 24px;
     margin-bottom: 72px;
     margin-left: 0 auto;
     margin-right: 0 auto;
@@ -382,6 +381,7 @@ img {
 }
 
 .portfolio {
+    padding-top: 96px;
     padding-bottom: 120px;
 }
 
