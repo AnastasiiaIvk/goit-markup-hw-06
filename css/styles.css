@@ -182,10 +182,17 @@ img {
     text-align: center;
     height: 600px;
     padding: 188px 0;
-
+    margin: 0 auto;
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/img/peopleimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
 }
 
 .section-container {
+    
 }
 
 .headline {
@@ -197,7 +204,7 @@ img {
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;
+    margin-bottom: 48px;
 }
 
 .button {
@@ -402,4 +409,10 @@ img {
 
 .h-line {
     line-height: 1.2;
+}
+
+.customers {
+    padding-top: 120px;
+    padding-bottom: 280px;
+    margin-bottom: 72px;
 }
