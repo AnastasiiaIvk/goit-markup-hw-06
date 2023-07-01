@@ -11,6 +11,8 @@ body {
     --button: #4d5ae5;
     --back-btn: #F4F4FD;
     --border: #E7E9FC;
+    --client-icon: #8E8F99;
+    --hover: #404BBF;
 }
 
 .visually-hidden {
@@ -185,6 +187,8 @@ img {
     margin: 0 auto;
     max-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/images/img/peopleimg.jpg);
+
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -237,6 +241,9 @@ img {
 .quality-item {
     width: 264px;
 
+}
+
+.quality-icon {
 }
 
 .quality-list {
@@ -292,6 +299,14 @@ img {
     background-color: #FFFFFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+}
+
+.team-networks {
+    padding: 12px;
+    background-image: linear-gradient(rgba(77, 90, 229, 1), rgba(77, 90, 229, 1));
+}
+
+.net-icon {
 }
 
 .nav-list {
@@ -415,4 +430,38 @@ img {
     padding-top: 120px;
     padding-bottom: 280px;
     margin-bottom: 72px;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style-type: none;
+}
+
+.clients-item {
+
+}
+
+.clients-link {
+    display: flex;
+    width: 168px;
+    height: 88px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--client-icon);
+    border-radius: 4px;
+    padding: 16px 32px;   
+}
+
+.client-icons {
+    fill: var(--client-icon);
+}
+
+.clients-link:hover {
+    border-color: var(--hover);
+}
+
+.clients-link:hover .client-icons {
+    fill: var(--hover);
 }
