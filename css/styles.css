@@ -243,6 +243,16 @@ img {
 
 }
 
+.q-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 100px;
+    margin-bottom: 8px;
+    background-color: var(--back-btn);
+    border-radius: 4px;
+}
+
 .quality-icon {
 }
 
@@ -286,12 +296,12 @@ img {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
     gap: 24px;
+    justify-content: center;
 }
 
 .team-bottom {
-    padding: 32px 16px;
+    padding: 32px 0;
 
 }
 
@@ -299,14 +309,26 @@ img {
     background-color: #FFFFFF;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 8px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-networks {
-    padding: 12px;
-    background-image: linear-gradient(rgba(77, 90, 229, 1), rgba(77, 90, 229, 1));
+    
 }
-
+    
 .net-icon {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-color: var(--button);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list {
@@ -451,7 +473,8 @@ img {
     align-items: center;
     border: 1px solid var(--client-icon);
     border-radius: 4px;
-    padding: 16px 32px;   
+    padding: 16px 32px;
+    transition: border-color 250ms cubic-bezier(0.4,0,0.2,1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
 .client-icons {
@@ -464,4 +487,16 @@ img {
 
 .clients-link:hover .client-icons {
     fill: var(--hover);
+}
+
+.foot-container {
+    display: flex;
+}
+
+.footer-media {
+    margin-left: 120px;
+}
+
+.social-media {
+
 }
