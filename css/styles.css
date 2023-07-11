@@ -69,15 +69,20 @@ body {
 }
 
 .footer-icons {
+    width: 40px;
+    height: 40px;
+    
+}
+
+.footer-networks {
     display: flex;
-    justify-content: center;
     gap: 16px;
 }
 
 .foot-icon {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: var(--button);
     border-radius: 50%;
     justify-content: center;
@@ -85,7 +90,8 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.foot-icon:hover {
+.foot-icon:hover,
+.foot-icon:focus {
     background-color: #31D0AA;
 }
 
@@ -210,14 +216,14 @@ img {
     letter-spacing: 0.02em;
     list-style: none;
     color: var(--leader-color);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
 .address-link:focus {
     color: #404BBF;
 }
+
 
 .header-list-link.active::after {
     content: "";
@@ -282,8 +288,7 @@ img {
     margin: 0 auto;
     min-width: 169px;
     border: none;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button:hover,
@@ -379,21 +384,35 @@ img {
 
 .team-item {
     background-color: #FFFFFF;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
     margin-top: 8px;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.networks-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.networks-item {
+    width: 40px;
+    height: 40px;
+}
+
 .team-networks {
-    
+    fill: var(--back-btn);
 }
     
 .net-icon {
     display: flex;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     background-color: var(--button);
     border-radius: 50%;
     justify-content: center;
@@ -401,7 +420,8 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.net-icon:hover {
+.net-icon:hover,
+.net-icon:focus {
     background-color: var(--hover);
 
 }
@@ -417,9 +437,24 @@ img {
     margin-left: 0 auto;
     margin-right: 0 auto;
 }
+ 
 
 .item {
 
+}
+
+.item:hover,
+.item:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.nav-list-item {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .nav-btn {
@@ -432,14 +467,16 @@ img {
     border: 1px solid var(--border);
     border-radius: 4px;
     padding: 12px 24px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition:  250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-btn:hover,
 .nav-btn:focus {
     color: #FFFFFF;
-    background-color: #404BBF;
+    background-color: var(--hover);
     border: 1px solid transparent;
 }
 
@@ -461,11 +498,19 @@ img {
 }
 
 .all-item {
-    width: calc((100% - 48px) / 3);
-    
+    width: calc((100% - 48px) / 3);    
 }
 
+.all-item-link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.all-item-link:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 
 .bottom-card {
     padding: 32px 16px;
@@ -634,7 +679,7 @@ img {
 }
 
 .social-media {
-
+    fill: var(--back-btn);
 }
 
 /* Modal styles */
@@ -691,7 +736,7 @@ img {
 .modal-btn:focus {
     background-color: #404bbf;
     border: none;
-    
+    fill: #ffffff;
 }
 
 .modal-icon {
@@ -699,7 +744,3 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-icon:hover,
-.modal-icon:focus {
-    fill: #ffffff;
-}
