@@ -872,15 +872,10 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     user-select: none;
-
-    display: flex;
-    align-items: center;
-    gap: 8px;
 }
 
-.modal-form-checkbox {
+.modal-form-checkbox {}
     
-}
 
 .modal-form-custom {
     display: inline-flex;
@@ -890,11 +885,12 @@ img {
     width: 16px;
     height: 16px;
     border-radius: 2px;
+    margin-right: 8px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-checkbox:checked + .modal-form-custom {
+.modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom {
     border-color: none;
     background-color: var(--hover);
     fill: var(--back-btn);
