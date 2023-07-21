@@ -670,6 +670,7 @@ img {
 .foot-container {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 .footer-logo-p {
@@ -892,8 +893,66 @@ img {
     text-decoration-line: underline;
 }
 
-.subscribe {}
+.subscribe {
+    
+}
 
-.subscribe-text {}
+.footer-subscribe-form {
+    display: flex;
+    gap: 24px;
+    
+}
 
-.subscribe-form {}
+.subscribe-text {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    width: 75px;
+    height: 24px;
+    margin-left: 80px;
+    margin-bottom: 16px;
+}
+
+.subscribe-form {
+    
+}
+
+.subscribe-field {
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 80px;
+    color: #FFF;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    letter-spacing: 0.04em;
+}
+
+.subscribe-field:focus {
+    border-color: var(--hover);
+
+}
+
+.subscribe-field::placeholder {
+    width: 36px;
+    height: 24px;
+    color: #FFF;
+    
+}
+
+.btn {
+    padding: 8px 24px;
+}
+
+.subscribe-icon {
+
+}
