@@ -891,7 +891,7 @@ img {
 }
 
 .modal-form-checkbox:checked + .modal-form-agreement .modal-form-custom {
-    border-color: none;
+    border: none;
     background-color: var(--hover);
     fill: var(--back-btn);
 }
