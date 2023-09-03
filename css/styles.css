@@ -167,6 +167,13 @@ img {
         0px 1px 6px rgba(46, 47, 66, 0.08);;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 22px;
+  }
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -183,13 +190,14 @@ img {
     
 }
 
-.header-nav {
-
-}
-
 .header-logo {
     padding: 24px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .header-logo {
     margin-right: 76px;
+  }
 }
 
 .studio {
@@ -230,6 +238,12 @@ img {
     gap: 40px;
     border-bottom: 1px;
     border-bottom-color: var(--border);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .navigation {
+    display: none;
+  }
 }
 
 .address-link {
@@ -334,10 +348,6 @@ img {
   .section-quality {
     padding: 120px 0;
   }
-}
-
-.quality-item {
-    
 }
 
 @media only screen and (min-width: 768px) {
@@ -456,7 +466,6 @@ img {
     display: block;
 }
 
-/* !!!!!!!!!! АБЗАЦИ */
 
 @media only screen and (min-width: 768px) {
   .team-list {
@@ -587,6 +596,12 @@ img {
     gap: 40px;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .address-list {
+    display: none;
+  }
+}
+
 .all {
     display: flex;
     flex-wrap: wrap;
@@ -658,8 +673,10 @@ img {
 }
 
 .p-name-team {
-   text-align: center;
-    margin-bottom: 8px; 
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
 }
 
 .text {
@@ -736,24 +753,34 @@ img {
 /* Customers */
 
 .customers {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+@media only screen and (min-width: 1158px) {
+  .customers {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
 }
 
 .clients {
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    gap: 72px 16px;
     list-style-type: none;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.clients-item {
-
+@media only screen and (min-width: 768px) {
+  .clients {
+    gap: 72px 24px;
+  }
 }
 
 .clients-link {
     display: flex;
-    width: 168px;
+    max-width: 190px;
     height: 88px;
     justify-content: center;
     align-items: center;
@@ -761,7 +788,15 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     color: #8e8f99;
+    
     transition: border-color 250ms cubic-bezier(0.4,0,0.2,1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+@media only screen and (min-width: 768px) {
+  .clients-link {
+    flex-basis: calc((100% - 24px) / 3);
+    max-width: 168px;
+  }
 }
 
 .client-icons {
@@ -1104,4 +1139,69 @@ img {
 
 .subscribe-icon {
     margin-left: 16px;
+}
+
+/* Mobile menu */
+
+.menu-toggle {
+    min-height: 22px;
+    min-width: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
 }

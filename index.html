@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <!-- <header class="header"> 
+    <!-- Header -->
+    <header class="header"> 
         <div class="header-container container">
             <nav class="header-nav list">
                 <a class="logo header-logo link" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -33,12 +34,19 @@
                 <li><a class="address-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
             </address>
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
-    </header> -->
+    </header>
     <!-- Main block -->
     <main>
     <!-- Hero section -->
-  <!--   <section class="section-hero">
+    <!-- <section class="section-hero">
         <div class="section-container container">
             <h1 class="headline">Effective Solutions for Your Business</h1>
             <button class="button" type="button" data-modal-open>Order Service</button>
@@ -98,7 +106,7 @@
     </div>
     </section> -->
     <!-- Our Team -->
-    <section class="section-team">
+    <!-- <section class="section-team">
     <div class="container">
         <h2 class="h-mainpage-text h-mainpage-line">Our Team</h2>
             <ul class="team-list list">
@@ -199,7 +207,7 @@
                 </li>
             </ul>
     </div>
-    </section>
+    </section> -->
     <!--Customers-->
     <!-- <section class="customers">
         <div class="container">
@@ -238,7 +246,7 @@
             </ul>
         </div>
 
-    </section>   -->  
+    </section> -->
     </main>
     <!-- Footer -->
    <!--  <footer class="footer">
@@ -345,5 +353,26 @@
         </div> 
     </div>
     <script src="./js/modal.js"></script>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-menu-icon" width="32" height="22">
+                <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+        </button>
+    
+        <ul class="mobile-menu">
+            <li><a href="" class="link">About</a></li>
+            <li><a href="" class="link">Products</a></li>
+            <li><a href="" class="link">Contacts</a></li>
+            <li><a href="" class="link">Career</a></li>
+        </ul>
+    </div>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous">
+    </script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>
