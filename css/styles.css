@@ -393,10 +393,6 @@ img {
   }
 }
 
-. {
-    
-}
-
 /* Section Production */
 
 .h-mainpage-line {
@@ -460,13 +456,15 @@ img {
     display: block;
 }
 
-/* !!!!!!!!!! */
+/* !!!!!!!!!! АБЗАЦИ */
 
 @media only screen and (min-width: 768px) {
   .team-list {
     display: flex;
-    gap: 24px;
+    gap: 72px 24px;
     justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
