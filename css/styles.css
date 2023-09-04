@@ -179,7 +179,7 @@ img {
     font-style: normal;
     display: flex;
     align-items: center;
-    flex-direction: column;
+    
 }
 
 .link {
@@ -550,7 +550,7 @@ img {
 }
 
 .team-list {
-
+    flex-direction: column;
 }
 
 
