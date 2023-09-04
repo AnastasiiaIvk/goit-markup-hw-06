@@ -18,7 +18,7 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header"> 
+    <!-- <header class="header"> 
         <div class="header-container container">
             <nav class="header-nav list">
                 <a class="logo header-logo link" href="./index.html">Web<span class="studio">Studio</span></a>
@@ -40,7 +40,7 @@
                 </svg>
             </button>
         </div>
-    </header>
+    </header> -->
     <!-- Main block -->
     <main>
     <!-- Hero section -->
@@ -108,10 +108,14 @@
     <div class="container">
         <h2 class="h-mainpage-text h-mainpage-line">Our Team</h2>
             <ul class="team-list list">
-                <li class="team-item"><img class="team" src="./images/images/img/img.jpg"
+                <li class="team-item">
+                    <img class="team" 
+                    srcset="./images/images/img/img.jpg 1x, ./images/images/img/img@2.jpg 2x"
+                    src="./images/images/img/img.jpg"
                     alt="Mark Guerrero"
                     width="264"
-                    height="260"/>
+                    height="260"
+                    loading="lazy"/>
                 <div class="team-bottom">
                     <h3 class="p-name p-name-team">Mark Guerrero</h3>
                     <p class="p-text text">Product Designer</p>
@@ -132,10 +136,14 @@
                 </div>
                 </li>
 
-                <li class="team-item"><img class="team" src="./images/images/img/img1.jpg"
+                <li class="team-item">
+                    <img class="team" 
+                    srcset="./images/images/img/img1.jpg 1x, ./images/images/img/img1@2.jpg 2x"
+                    src="./images/images/img/img1.jpg"
                     alt="Tom Ford"
                     width="264"
-                    height="260"/>
+                    height="260"
+                    loading="lazy"/>
                 <div class="team-bottom">
                     <h3 class="p-name p-name-team">Tom Ford</h3>
                     <p class="p-text text">Frontend Developer</p>
@@ -156,10 +164,14 @@
                 </div>    
                 </li>
 
-                <li class="team-item"><img class="team" src="./images/images/img/img2.jpg"
+                <li class="team-item">
+                    <img class="team" 
+                    srcset="./images/images/img/img2.jpg 1x, ./images/images/img/img2@2.jpg 2x"
+                    src="./images/images/img/img2.jpg"
                     alt="Camila Garcia"
                     width="264"
-                    height="260"/>
+                    height="260"
+                    loading="lazy"/>
                 <div class="team-bottom">
                     <h3 class="p-name p-name-team">Camila Garcia</h3>
                     <p class="p-text text">Marketing</p>
@@ -180,10 +192,14 @@
                 </div>
                 </li>
 
-                <li class="team-item"><img class="team" src="./images/images/img/img3.jpg"
+                <li class="team-item">
+                    <img class="team" 
+                    srcset="./images/images/img/img3.jpg 1x, ./images/images/img/img3@2.jpg 2x"
+                    src="./images/images/img/img3.jpg"
                      alt="Daniel Wilson"
                      width="264"
-                     height="260"/>
+                     height="260"
+                     loading="lazy"/>
                 <div class="team-bottom">
                      <h3 class="p-name p-name-team">Daniel Wilson</h3>
                      <p class="p-text text">UI Designer</p>
@@ -247,7 +263,7 @@
     </section> -->
     </main>
     <!-- Footer -->
-   <!--  <footer class="footer">
+    <footer class="footer">
         <div class="footer-logo container foot-container">
             <div class="footer-logo-p"><a class="logo footer-link link" href="./index.html">Web<span
                         class="studio-footer">Studio</span></a>
@@ -290,7 +306,7 @@
                 </form>    
             </div>
         </div>
-    </footer> -->
+    </footer>
 
 
     <!-- Modal window-->
@@ -353,7 +369,7 @@
     <script src="./js/modal.js"></script>
 
     <!-- Mobile menu -->
-    <div class="backdrop is-hidden menu-container js-menu-container" id="mobile-menu">
+    <div class="backdrop menu-container js-menu-container" id="mobile-menu">
         <button class="js-close-menu button-menu-close">
             <svg class="mobile-menu-close" width="8" height="8">
               <use href="./images/icons.svg#close-burger-menu"></use>
