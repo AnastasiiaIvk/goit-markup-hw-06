@@ -58,7 +58,20 @@ body {
     width: 264px;
 }
 
-.social-text {
+@media only screen and (max-width: 767.98px) {
+  .footer-text {
+    text-align: start;
+    width: 268px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .social-text {
+    text-align: center;
+  }
+}
+
+.social-text { 
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -570,6 +583,12 @@ img {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (max-width: 767.98px) {
+  .team-item {
+    margin-bottom: 72px;
+  }
+}
+
 .networks-list {
     display: flex;
     justify-content: center;
@@ -939,6 +958,12 @@ img {
     margin-right: 120px;
 }
 
+@media only screen and (max-width: 767.98px) {
+  .footer-logo-p {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1157.98px) {
   .footer-logo-p {
     margin-bottom: 72px;
@@ -960,6 +985,12 @@ img {
 
 .social-media {
     fill: var(--back-btn);
+}
+
+@media only screen and (max-width: 767.98px) {
+  .subscribe {
+    text-align: center;
+  }
 }
 
 /* Modal styles */
@@ -1249,6 +1280,10 @@ img {
     max-width: 398px;
   }
 }
+
+.footer-subscribe-form {
+    width: 100%; }
+
 
 .subscribe-field:focus {
     border-color: var(--hover);
