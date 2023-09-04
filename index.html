@@ -353,17 +353,43 @@
     <script src="./js/modal.js"></script>
 
     <!-- Mobile menu -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="backdrop is-hidden menu-container js-menu-container" id="mobile-menu">
         <button class="js-close-menu button-menu-close">
             <svg class="mobile-menu-close" width="8" height="8">
               <use href="./images/icons.svg#close-burger-menu"></use>
             </svg>
         </button>
     
-        <ul class="mobile-menu">
-            <li><a href="./index.html" class="mobile-menu-item-link mobile-menu-item link">Studio</a></li>
-            <li><a href="./portfolio.html" class="mobile-menu-item link">Portfolio</a></li>
-            <li><a href="" class="mobile-menu-item link">Contacts</a></li>
+        <ul class="mobile-menu list">
+            <li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link mobile-menu-item link">Studio</a></li>
+            <li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a></li>
+            <li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Contacts</a></li>
+        </ul>
+        
+        <address>
+            <ul class="adress-menu">
+                <li class="menu-adress-phone"><a class="link" href="tel:+110001111111"></a>+11 (000) 111-11-11</li>
+                <li class="menu-adress-email">info@devstudio.com</li>
+            </ul>
+        </address>
+
+        <ul class="footer-networks">
+            <li class="footer-icons"><a class="foot-icon" href="" aria-label="Website networks"><svg class="social-media"
+                                width="24" height="24">
+                                <use href="./images/icons.svg#instagram"></use>
+                            </svg></a></li>
+            <li class="footer-icons"><a class="foot-icon" href="" aria-label="Website networks"><svg class="social-media"
+                                width="24" height="24">
+                                <use href="./images/icons.svg#twitter"></use>
+                            </svg></a></li>
+            <li class="footer-icons"><a class="foot-icon" href="" aria-label="Website networks"><svg class="social-media"
+                                width="24" height="24">
+                                <use href="./images/icons.svg#facebook"></use>
+                            </svg></a></li>
+            <li class="footer-icons"><a class="foot-icon" href="" aria-label="Website networks"><svg class="social-media"
+                                width="24" height="24">
+                                <use href="./images/icons.svg#linkedin"></use>
+                            </svg></a></li>
         </ul>
     </div>
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
