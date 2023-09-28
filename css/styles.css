@@ -865,7 +865,7 @@ img {
 
 .clients {
     display: flex;
-    gap: 72px 16px;
+    gap: 72px 24px;
     list-style-type: none;
     justify-content: center;
     flex-wrap: wrap;
