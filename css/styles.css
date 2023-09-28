@@ -96,7 +96,7 @@ body {
 .footer-networks {
     display: flex;
     list-style: none;
-    gap: 28px;
+    gap: 24px;
     align-items: flex-start;
     justify-content: center;
 }
@@ -193,13 +193,6 @@ img {
     box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 1px 6px rgba(46, 47, 66, 0.08);;
-}
-
-@media only screen and (max-width: 767.98px) {
-  .header {
-    padding-top: 24px;
-    padding-bottom: 22px;
-  }
 }
 
 .header-container {
@@ -328,7 +321,6 @@ img {
 .section-hero {
     background-color: var(--headline-and-back);
     text-align: center;
-    height: 600px;
     padding: 112px 0;
     margin: 0 auto;
     max-width: 1440px;
@@ -879,23 +871,15 @@ img {
     flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 768px) {
-  .clients {
-    gap: 72px 24px;
-  }
-}
-
 .clients-link {
     display: flex;
-    max-width: 190px;
     height: 88px;
     justify-content: center;
     align-items: center;
     border: 1px solid var(--client-icon);
     border-radius: 4px;
-    padding: 16px 32px;
     color: #8e8f99;
-    
+    flex-basis: calc((100% - 190px) / 2);
     transition: border-color 250ms cubic-bezier(0.4,0,0.2,1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
@@ -903,6 +887,8 @@ img {
   .clients-link {
     flex-basis: calc((100% - 24px) / 3);
     max-width: 168px;
+    max-width: 190px;
+    padding: 16px 32px;
   }
 }
 
@@ -952,10 +938,6 @@ img {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
-}
-
-.footer-logo-p {
-    margin-right: 120px;
 }
 
 @media only screen and (max-width: 767.98px) {
@@ -1030,6 +1012,12 @@ img {
     padding: 72px 24px 24px 24px;
 }
 
+@media only screen and (max-width: 427.98px) {
+  .modal {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 767.98px) {
   .modal {
     padding-left: 18px;
@@ -1082,11 +1070,16 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    text-align: center;
     width: 360px;
     color: var(--headline-and-back);
     margin-bottom: 16px;
 
+}
+
+@media only screen and (min-width: 428px) {
+  .modal-text {
+    text-align: center;
+  }
 }
 
 .modal-form-form {
